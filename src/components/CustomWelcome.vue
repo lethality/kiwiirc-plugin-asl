@@ -49,8 +49,8 @@
                     type="number"
                 />
                 <div class="kiwi-welcome-simple-sex">
-                    <label>Sex</label>
-                    <select v-model="sex">
+                    <label>Gender</label>
+                    <select v-model="sex" required>
                         <option :value="null" selected disabled>Select</option>
                         <option value="M">Male</option>
                         <option value="F">Female</option>
@@ -61,6 +61,7 @@
                 <input-text
                     label="Location"
                     v-model="location"
+                    required
                 />
 
                 <div v-if="showChannel" class="kiwi-welcome-simple-input-container">
