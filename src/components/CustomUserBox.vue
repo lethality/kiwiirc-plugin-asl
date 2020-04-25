@@ -8,7 +8,6 @@
                 <away-status-indicator :network="network" :user="user"/> {{ user.nick }}
                 <span v-if="userMode" class="kiwi-userbox-modestring">+{{ userMode }}</span>
             </h3>
-            <div class="kiwi-userbox-usermask">{{ user.username }}@{{ user.host }}</div>
         </div>
 
         <div class="kiwi-userbox-basicinfo">
@@ -18,7 +17,7 @@
                     <span class="kiwi-userbox-basicinfo-data">{{asl.a}}</span>
                 </div>
                 <div v-if="asl.s">
-                    <span class="kiwi-userbox-basicinfo-title">Sex</span>
+                    <span class="kiwi-userbox-basicinfo-title">Gender</span>
                     <span class="kiwi-userbox-basicinfo-data">{{asl.s}}</span>
                 </div>
                 <div v-if="asl.l">
